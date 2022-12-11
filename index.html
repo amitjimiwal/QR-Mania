@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QRMania</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.1/axios.min.js" integrity="sha512-zJYu9ICC+mWF3+dJ4QC34N9RA0OVS1XtPbnf6oXlvGrLGNB8egsEzu/5wgG90I61hOOKvcywoLzwNmPqGAdATA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <main class="main-body">
+        <h1>Generate QR Code</h1>
+        <form action="" id="main-url-form">
+            <input type="text" name="input text" id="user-input" placeholder="Enter a valid url or a text to make QR">
+            <!-- <select name="size" id="qr-size" class="button-style">
+                <option value="100">100X100</option>
+                <option value="200">200X200</option>
+                <option value="300">300X300</option>
+                <option value="400">400X400</option>
+            </select> -->
+            <button type="submit" class="button-style" id="generate-btn">Generate QR Code</button>
+        </form>
+        <div class="loader"></div>
+        <!-- <div id="qrcode" style="margin: auto;"></div> -->
+        <!-- <canvas id="qrcode"></canvas> -->
+        <img  class="qrcode">
+        
+        <!-- <a href="" download="qrcode" class="button-style" id="downloadbtn">
+            <i class="fa fa-download"></i> Download 
+        </a> -->
+        <button class="download-button button-style"><i class="fa fa-download"></i> Download</button>
+    </main>
+</body>
+<script src="main.js"></script>
+
+</html>
