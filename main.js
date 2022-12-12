@@ -1,8 +1,7 @@
 const generatebtn=document.getElementById('generate-btn');
 const input=document.getElementById('user-input');
-const down=document.querySelector('#downloadbtn');
+const down=document.querySelector('.download-button');
 const sizeelem=document.getElementById('qr-size');
-
 const form=document.getElementById('main-url-form');
 function showspin(){
     document.querySelector('.loader').style.display='block';
@@ -10,13 +9,13 @@ function showspin(){
 function endspin(){
     document.querySelector('.loader').style.display='none';
 }
-
 function generate(url,size){
     const urlimg=document.querySelector('.qrcode');  
-       urlimg.setAttribute('src',`https://api.qrserver.com/v1/create-qr-code/?size=${size}x${size}&data=${url}`).
-       urlimg.style.display='block';
+    urlimg.setAttribute('src',`https://api.qrserver.com/v1/create-qr-code/?size=${size}x${size}&data=${url}`).
+    urlimg.style.display='block';
        return;
 }
+
 const mainfunc=()=>{
     const url=input.value;
     const size=sizeelem.value;
@@ -32,8 +31,6 @@ const mainfunc=()=>{
         return;
     }
 }
-
-
 form.addEventListener('submit',(e)=>{
     e.preventDefault();
     mainfunc();
