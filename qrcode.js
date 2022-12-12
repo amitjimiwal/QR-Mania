@@ -1,3 +1,12 @@
+/*
+This File Contains some dummy codes which is used for making QR codes with different Platforms.
+
+KIndly IGnore this file..
+Thanks 
+@amitjimiwal
+*/
+
+
 
 // const generatebtn=document.getElementById('generate-btn');
 // const downloadbtn=document.querySelector('.download-button');
