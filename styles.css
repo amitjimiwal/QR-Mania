@@ -7,7 +7,7 @@
     font-family: 'Raleway', sans-serif;
 }
 
-@media (min-width:900px) and (max-width:2000px){
+@media (min-width:1500px) and (max-width:2000px){
     html{
         font-size: 30px;
     }    
