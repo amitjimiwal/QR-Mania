@@ -1,41 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="QRCODE,make qr code,qrcode maker">
-    <meta name="description" content="Your One Step Solution for QR code generation of texts or URLs.">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="QRCODE,make qr code,qrcode maker" />
+    <meta
+      name="description"
+      content="Your One Step Solution for QR code generation of texts or URLs."
+    />
     <title>QRMania</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="icon" type="image/x-icon" href="favicon.png">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Sofia"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="icon" type="image/x-icon" href="favicon.png" />
+  </head>
+  <body>
     <!-- Main BOdy -->
     <main class="main-body">
-        <h1>Generate QR Code</h1>
-        <!-- Form -->
-        <form action="" id="main-url-form">
-            <input type="text" name="input text" id="user-input" placeholder="Enter a valid url or a text to make QR">
-            <select name="size" id="qr-size" class="button-style">
-                <option value="100">100X100</option>
-                <option value="200">200X200</option>
-                <option value="300">300X300</option>
-                <option value="400">400X400</option>
-            </select>
-            <button type="submit" class="button-style" id="generate-btn">Generate QR Code</button>
-        </form>
-        <div class="loader"></div>
-        <img src="" class="qrcode">
-        <!-- download Button -->
-        <!-- <button class="download-button button-style">
+      <h1>Generate QR Code</h1>
+      <!-- Form -->
+      <form action="" id="main-url-form">
+        <input
+          type="text"
+          name="input text"
+          id="user-input"
+          placeholder="Enter a valid url or a text to make QR"
+        />
+        <select name="size" id="qr-size" class="button-style">
+          <option value="100">100X100</option>
+          <option value="200">200X200</option>
+          <option value="300">300X300</option>
+          <option value="400">400X400</option>
+        </select>
+        <button type="submit" class="button-style" id="generate-btn">
+          Generate QR Code
+        </button>
+      </form>
+      <div class="loader"></div>
+      <img src="" class="qrcode" />
+      <!-- download Button -->
+      <!-- <button class="download-button button-style">
             <i class="fa fa-download"></i> Download
         </button> -->
     </main>
-
-</body>
-<script src="main.js"></script>
-
+  </body>
+  <script src="main.js"></script>
 </html>
